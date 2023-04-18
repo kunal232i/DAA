@@ -1,0 +1,34 @@
+h1 {
+  text-align: center;
+}
+
+#solutions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(var(--n), 1fr);
+  grid-template-rows: repeat(var(--n), 1fr);
+  gap: 2px;
+  background-color: #eee;
+  margin: 10px;
+}
+
+.board div {
+  background-color: #fff;
+}
+
+.board div.queen {
+  background-color: #c00;
+}
+
+@media screen and (max-width: 768px) {
+  .board {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+  }
+}
